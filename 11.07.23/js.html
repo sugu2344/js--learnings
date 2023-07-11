@@ -1,0 +1,60 @@
+<html>
+  <head></head>
+  <title>arrays</title>
+  <body>
+    <h1>lets seprate odd and even number using array</h1>
+    <h1>question</h1>
+<p id="question"></p>
+    <br>
+
+    <p>solution</p>
+    <p id="new"></p>
+    <p id="odd"></p> 
+    <p id="even"></p>
+    <p id="sumodd"></p>
+    <p id="sumeven"></p>
+
+  </body>
+
+  <script>
+    let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let array2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+document.getElementById("question").innerHTML=array1+array2;
+    let joinarray = array1.concat(array2);
+    console.log(joinarray);
+    document.getElementById("new").innerHTML = joinarray;
+    // odd and even number
+
+    let odd = [];
+    let even = [];
+    let sumofoddnumbers=0;
+    let sumofevennumbers=0;
+  
+    for (let i=0; i<joinarray.length; i++)
+    {
+      if (joinarray[i] % 2 == 0) 
+      {
+        even.push(joinarray[i])
+        sumofevennumbers=sumofevennumbers+joinarray[i]
+        console.log(joinarray[i]);
+       // sumofevennumbers+=joinarray[i]
+      }
+       else 
+       {
+        odd.push(joinarray[i])
+        sumofoddnumbers=sumofoddnumbers+joinarray[i]
+      }
+    }
+    document.getElementById("odd").innerHTML= "odd number:"+odd;
+    document.getElementById("even").innerHTML="even number"+even;
+  
+    console.log("odd number:"+odd); 
+    console.log("even number:"+even);
+    //sum of numbers
+    console.log("sum of odd number:"+sumofoddnumbers);
+    console.log("sum of even number:"+sumofevennumbers);
+    document.getElementById("sumodd").innerHTML= "sum of odd number"+sumofoddnumbers;
+    document.getElementById("sumeven").innerHTML="sum of even numbers"+sumofevennumbers;
+
+  </script>
+</html>
