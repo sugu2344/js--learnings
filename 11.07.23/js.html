@@ -13,6 +13,8 @@
     <p id="even"></p>
     <p id="sumodd"></p>
     <p id="sumeven"></p>
+    <p id="asscendingorder"></p>
+    <p id="descendingorder"></p>
 
   </body>
 
@@ -23,7 +25,7 @@ document.getElementById("question").innerHTML=array1+array2;
     let joinarray = array1.concat(array2);
     console.log(joinarray);
     document.getElementById("new").innerHTML = joinarray;
-    // odd and even number
+    //............................. odd and even number &sum of numbers using array................................................
 
     let odd = [];
     let even = [];
@@ -50,11 +52,35 @@ document.getElementById("question").innerHTML=array1+array2;
   
     console.log("odd number:"+odd); 
     console.log("even number:"+even);
-    //sum of numbers
+    //...................................sum of numbers.............................................................
     console.log("sum of odd number:"+sumofoddnumbers);
     console.log("sum of even number:"+sumofevennumbers);
     document.getElementById("sumodd").innerHTML= "sum of odd number"+sumofoddnumbers;
     document.getElementById("sumeven").innerHTML="sum of even numbers"+sumofevennumbers;
-
+    //..................................sorting using loop.........................................................
+    let x=[45,51,6,2,3,56,98,101,25,288];
+    for(let i=1; i< x.length;i++)
+    for (let j=0;j< i ;j++)
+    if(x[i]<x[j])
+    {
+      let y=x[i];
+      x[i] =x[j];
+      x[j]=y;
+    }
+    console.log("assending order is:"+x);
+    document.getElementById("asscendingorder").innerHTML="assending order is:"+x;
+    ///even numbers..............................................
+ 
+    let z=[45,51,6,2,3,56,98,101,25,288];
+    for(let i=1; i < z.length;i++)
+    for (let j=0;j< i ;j++)
+    if(z[i]>z[j])
+    {
+      let y=z[i];
+      z[i] =z[j];
+      z[j]=y;
+    }
+    console.log("descending order is "+z);
+    document.getElementById("descendingorder").innerHTML="descending order is:"+z;
   </script>
 </html>
