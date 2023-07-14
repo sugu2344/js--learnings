@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <title>array sorting</title>
+    <body>
+        <h1>
+            in thus we are going to see the aray.sort()
+        </h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+    </body>
+    <script>
+        //  let places =["chennai","salem","kovai","madurai"];
+        // document.getElementById("demo").innerHTML=places.sort();
+
+        let places =["chennai","Salem","Kovai","madurai"];
+        document.getElementById("demo1").innerHTML=places.sort();
+        //................sorting using numbers....................
+        let numbers =[1,2,3,50,45,62,56,96,63,666,200,354];
+        document.getElementById("demo2").innerHTML=numbers.sort();
+        // ...................... sorting numbers other method.....................
+        numbers.sort(function(a,b){return a-b});
+        document.getElementById("demo3").innerHTML=numbers; 
+        // ...............reversing of array................................
+       let numbers1= [45,58,30,10,222,1000,555,55,69,92];
+        document.getElementById("demo3").innerHTML=numbers1.reverse();
+        numbers.reverse(function(a,b){return b-a});
+        document.getElementById("demo4").innerHTML=numbers1.reverse();
+
+
+    </script>
+</html>

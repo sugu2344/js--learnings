@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <title>
+         common numbers using arrays
+    </title>
+    <body>
+<p id="COMMONARRAY"></p>
+    </body>
+    <script>
+a = [45,96,23,57,10,88,66,28,33,15]
+b = [55,46,22,77,39,10,28,15,96]
+c = []
+for(let i = 0;i<a.length;i++){
+for(let j = 0;j<b.length;j++)
+{
+    if(a[i] == b[j]){
+     c.push(a[i])
+  
+    }
+}
+}
+document.getElementById("COMMONARRAY").innerHTML="common number is:"+c;
+console.log(c)
+                
+</script>
+</html> 
