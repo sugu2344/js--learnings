@@ -11,6 +11,7 @@
   <p id="some"></p>
   <p id="lastindex"></p>
   <p id="foreachloop"></p>
+
   
     </body>
     <script>
@@ -72,15 +73,18 @@
             return value;
            }
 
-            // .......
+            // .......using each loop
             
             let x=[];
             let n= numbers.forEach(n => {
             if (n % 7 === 0) x.push(n);
-            
             } );
             console.log("2)The  divisible by 7 using forEach loop:"+x);
             document.getElementById("foreachloop").innerHTML="2)The  divisible by 7 using forEach loop:"+x;
+
+       
+           
+
             
             
             
