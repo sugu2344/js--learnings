@@ -9,6 +9,7 @@
   <p id="maps"></p>
   <p id="index"></p>
   <p id="some"></p>
+  <p id="lastindex"></p>
   
     </body>
     <script>
@@ -61,6 +62,18 @@
             function suome (value,index){
                 return value %3==0;
             }
+
+            // .......index off
+            let places =index (numbers)
+            document.getElementById("lastindex").innerHTML="7)the end position of “49” element in the numbers array."+places;
+           function index(numbers){
+             let value =numbers.lastIndexOf(49);
+            return value;
+            }
+            
+            
+
+
 
 
              
