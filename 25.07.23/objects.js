@@ -4,6 +4,7 @@ const person = {
     age: 27,
     eyeColor: "BROWN"
   };
+
 function keysandvalues(){
   let keys = Object.keys(person);
    let values= Object.values(person);
